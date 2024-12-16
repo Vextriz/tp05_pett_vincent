@@ -1,22 +1,22 @@
-<app-product-filter (filterEvent)="search($event)"></app-product-filter>
-
-<table class="table table-bordered mt-3">
+<table class="table table-bordered">
   <thead>
     <tr>
-      <th>ID</th>
       <th>Nom</th>
       <th>Catégorie</th>
       <th>Prix</th>
-      <th>Stock</th>
+      <th>Quantité</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let product of filteredProducts">
-      <td>{{ product.id }}</td>
+    <tr *ngFor="let product of products">
       <td>{{ product.nom }}</td>
       <td>{{ product.categorie }}</td>
-      <td>{{ product.prix | currency }}</td> 
-      <td>{{ product.stock }}</td>
+      <td>{{ product.prix | currency }}</td>
+      <td>
+        <button class="btn btn-danger btn-sm" (click)="removeFromCart(product)">-</button>
+        <span>{{ productQuantities[product.id] || 0 }}</span>
+        <button class="btn btn-success btn-sm" (click)="addToCart(product)">+</button>
+      </td>
     </tr>
   </tbody>
 </table>

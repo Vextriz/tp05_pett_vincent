@@ -1,0 +1,34 @@
+<ng-container *ngIf="shoppingBag$ | async as shoppingBag">
+  <table class="table table-bordered" *ngIf="shoppingBag.length > 0">
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th>Catégorie</th>
+        <th>Prix Unitaire</th>
+        <th>Quantité</th>
+        <th>Total</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of shoppingBag">
+        <td>{{ item.product.nom }}</td>
+        <td>{{ item.product.categorie }}</td>
+        <td>{{ item.product.prix | currency }}</td>
+        <td>{{ item.quantity }}</td>
+        <td>{{ item.product.prix * item.quantity | currency }}</td>
+        <td>
+          <button class="btn btn-danger btn-sm" (click)="removeFromCart(item.product)">
+            Supprimer
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Total : {{ getTotal(shoppingBag) | currency }}</h3>
+
+  <div *ngIf="shoppingBag.length === 0">
+    <p>Votre panier est vide.</p>
+  </div>
+</ng-container>
