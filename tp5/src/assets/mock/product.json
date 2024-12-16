@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "nom": "Ordinateur Portable",
+    "categorie": "Électronique",
+    "prix": 799.99,
+    "stock": 25
+  },
+  {
+    "id": 2,
+    "nom": "Smartphone",
+    "categorie": "Électronique",
+    "prix": 599.99,
+    "stock": 50
+  },
+  {
+    "id": 3,
+    "nom": "Casque Bluetooth",
+    "categorie": "Accessoires",
+    "prix": 99.99,
+    "stock": 75
+  },
+  {
+    "id": 4,
+    "nom": "Télévision 4K",
+    "categorie": "Électronique",
+    "prix": 1200.00,
+    "stock": 15
+  },
+  {
+    "id": 5,
+    "nom": "Clavier Mécanique",
+    "categorie": "Accessoires",
+    "prix": 89.99,
+    "stock": 100
+  },
+  {
+    "id": 6,
+    "nom": "Souris Gaming",
+    "categorie": "Accessoires",
+    "prix": 49.99,
+    "stock": 120
+  },
+  {
+    "id": 7,
+    "nom": "Moniteur 24 pouces",
+    "categorie": "Électronique",
+    "prix": 199.99,
+    "stock": 30
+  },
+  {
+    "id": 8,
+    "nom": "Tablette Graphique",
+    "categorie": "Informatique",
+    "prix": 249.99,
+    "stock": 40
+  },
+  {
+    "id": 9,
+    "nom": "Imprimante Laser",
+    "categorie": "Informatique",
+    "prix": 150.00,
+    "stock": 20
+  },
+  {
+    "id": 10,
+    "nom": "Disque Dur Externe 1TB",
+    "categorie": "Stockage",
+    "prix": 79.99,
+    "stock": 60
+  }
+]

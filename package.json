@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@ngxs/store": "^19.0.0"
+  }
+}

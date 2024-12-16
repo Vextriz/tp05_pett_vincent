@@ -1,0 +1,22 @@
+<app-product-filter (filterEvent)="search($event)"></app-product-filter>
+
+<table class="table table-bordered mt-3">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nom</th>
+      <th>Catégorie</th>
+      <th>Prix</th>
+      <th>Stock</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of filteredProducts">
+      <td>{{ product.id }}</td>
+      <td>{{ product.nom }}</td>
+      <td>{{ product.categorie }}</td>
+      <td>{{ product.prix | currency }}</td> 
+      <td>{{ product.stock }}</td>
+    </tr>
+  </tbody>
+</table>
